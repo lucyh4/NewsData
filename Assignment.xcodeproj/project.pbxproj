@@ -50,6 +50,7 @@
 		91DFF9C82BD3BC37009E5DD1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFF9C72BD3BC37009E5DD1 /* NetworkManager.swift */; };
 		91DFF9CB2BD3C9CB009E5DD1 /* SearchBarCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DFF9CA2BD3C9CB009E5DD1 /* SearchBarCustomView.xib */; };
 		91DFF9CD2BD3C9D8009E5DD1 /* SearchBarCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFF9CC2BD3C9D8009E5DD1 /* SearchBarCustomView.swift */; };
+		91DFF9CF2BD40894009E5DD1 /* HomeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFF9CE2BD40894009E5DD1 /* HomeServiceTests.swift */; };
 		BC16659D4C00AB5FBF4DE528 /* Pods_Assignment_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C868B8D3DFB9D4C8835EFC /* Pods_Assignment_AssignmentUITests.framework */; };
 		C22A161E11B7D741E3AC98E1 /* Pods_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB2E2E8CBD31B7DBE8BB174 /* Pods_AssignmentTests.framework */; };
 /* End PBXBuildFile section */
@@ -122,6 +123,7 @@
 		91DFF9C72BD3BC37009E5DD1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		91DFF9CA2BD3C9CB009E5DD1 /* SearchBarCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarCustomView.xib; sourceTree = "<group>"; };
 		91DFF9CC2BD3C9D8009E5DD1 /* SearchBarCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarCustomView.swift; sourceTree = "<group>"; };
+		91DFF9CE2BD40894009E5DD1 /* HomeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceTests.swift; sourceTree = "<group>"; };
 		AAD3E18D31B5819293000B71 /* Pods-AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-AssignmentTests/Pods-AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9036FDEDD7A2A5036FDF1A7 /* Pods_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC59CE2673F0EC2ECD46AD7 /* Pods-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Assignment/Pods-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				91D729112BD044D000137E7C /* AssignmentTests.swift */,
+				91DFF9CE2BD40894009E5DD1 /* HomeServiceTests.swift */,
 			);
 			path = AssignmentTests;
 			sourceTree = "<group>";
@@ -664,6 +667,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91D729122BD044D000137E7C /* AssignmentTests.swift in Sources */,
+				91DFF9CF2BD40894009E5DD1 /* HomeServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,6 +844,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QSR2C5YL3M;
+				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Assignment/Info.plist;
@@ -871,6 +876,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QSR2C5YL3M;
+				ENABLE_TESTABILITY = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Assignment/Info.plist;
@@ -902,6 +908,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QSR2C5YL3M;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
@@ -923,6 +930,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QSR2C5YL3M;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
@@ -943,6 +951,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QSR2C5YL3M;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.aig.AssignmentUITests;
@@ -962,6 +971,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QSR2C5YL3M;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.aig.AssignmentUITests;

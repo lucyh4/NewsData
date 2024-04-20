@@ -19,6 +19,16 @@ protocol ServiceManager {
     func put(with url: String, parameters: [String : Any]?, headers: [String : String]?, success: @escaping ([String : Any]?) -> Void, failure: @escaping (DError) -> Void)
 }
 
+extension ServiceManager {
+    func get(with url: String, parameters: [String: Any]?, headers: [String: String]?, success: @escaping ([String: Any]?) -> Void, failure: @escaping (DError) -> Void) {}
+    func post(with url: String, parameters: [String: Any]?, headers: [String: String]?, success: @escaping ([String: Any]?) -> Void, failure: @escaping (DError) -> Void) {}
+    func patch(with url: String, parameters: [String: Any]?, headers: [String: String]?, success: @escaping ([String: Any]?) -> Void, failure: @escaping (DError) -> Void) {}
+    func upload(with url: String, imageData: Data?, parameters: [String : Any]?, withName: String?, headers: [String : String]?, success: @escaping ([String : Any]?) -> Void, failure: @escaping (DError) -> Void) {}
+    func delete(with url: String, parameters: [String : Any]?, headers: [String : String]?, success: @escaping ([String : Any]?) -> Void, failure: @escaping (DError) -> Void) {}
+    func uploadDocument(httpMethod: HTTPMethod, with url: String, imageData: [Data]?, imageDataKeyName: String, parameters: [String : Any]?, headers: [String : String]?, success: @escaping ([String : Any]?) -> Void, failure: @escaping (DError) -> Void) {}
+    func put(with url: String, parameters: [String : Any]?, headers: [String : String]?, success: @escaping ([String : Any]?) -> Void, failure: @escaping (DError) -> Void) {}
+}
+
 struct ServiceManagerImp: ServiceManager {
     //Parse contents
     private let STATUS = "status"

@@ -8,7 +8,7 @@
 import UIKit
 
 class SplashViewController: UIViewController {
-    
+    @IBOutlet weak var titleLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
