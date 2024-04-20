@@ -110,7 +110,10 @@
                                                     <constraint firstAttribute="height" constant="40" id="lxf-rn-Sh1"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Checkout Website"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Checkout My GitHub"/>
+                                                <connections>
+                                                    <action selector="didTapOnBottomBtn:" destination="fxu-As-EMn" eventType="touchUpInside" id="0bd-77-ySa"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
