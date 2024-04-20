@@ -1,5 +1,5 @@
 # NewsData
-Shows List of News from NewAPI.com
+Shows List of News from [NewAPI.com](https://newsapi.org/)
 
 # Overview
 This iOS project is implemented in Swift, MVVM (Model-View-ViewModel) architecture pattern, and Core Data for local storage with Xcode (v15.3). It provides a structured approach for developing iOS applications, promoting separation of concerns and maintainability.
