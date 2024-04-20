@@ -37,10 +37,13 @@ class NetworkManager {
             switch reachability.connection {
             case .wifi:
                 print("Reachable via wifi")
+                NotificationCenter.default.post(name: Notification.Name.internetAvailable, object: nil, userInfo: nil)
             case .cellular:
                 print("Reachable via cellular")
+                NotificationCenter.default.post(name: Notification.Name.internetAvailable, object: nil, userInfo: nil)
             case .none, .unavailable:
                 print("Network not raachable")
+                NotificationCenter.default.post(name: Notification.Name.internetNotAvailable, object: nil, userInfo: nil)
             }
         }
     }

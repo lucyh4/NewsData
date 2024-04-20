@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIViewController {
+    
     static var splash: SplashViewController {
         guard let vc = UIStoryboard.main.instantiateViewController(withIdentifier: "\(SplashViewController.self)") as? SplashViewController else { fatalError() }
         return vc
@@ -20,14 +21,6 @@ extension UIViewController {
     static var detailVC: DetailViewController {
         guard let vc = UIStoryboard.main.instantiateViewController(withIdentifier: "\(DetailViewController.self)") as? DetailViewController else { fatalError() }
         return vc
-    }
-    
-    func isInternetConnected() -> Bool {
-        if NetworkManager.shared.reachability.connection != .unavailable {
-            return true
-        } else {
-            return false
-        }
     }
     
 }

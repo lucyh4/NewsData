@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, CommontLoader {
+class HomeViewController: BaseViewController, CommontLoader {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     var refreshControl = UIRefreshControl()
@@ -26,6 +26,7 @@ class HomeViewController: UIViewController, CommontLoader {
         self.title = "Home" // to set navigation title
         setUpTableView()
         bind()
+        showLocallyStoredData() // showing locally stored data irrespective of internet connectivity once the data fetched from BE tableview will get reload
         setUpRefreshControl()
     }
     
@@ -39,14 +40,17 @@ class HomeViewController: UIViewController, CommontLoader {
         tableView.register(CarouselTableViewCell.nib(), forCellReuseIdentifier: CarouselTableViewCell.identifier)
     }
     
+    private func showLocallyStoredData() {
+        viewModel.getDataForOflline()
+        self.tableView.reloadData()
+    }
+    
     private func bind() {
         if isInternetConnected() {
             showLoading()
             viewModel.getCarouselData() // api call
         } else {
-            self.showToast(message: "Please connect to internet..")
-            viewModel.getDataForOflline()
-            self.tableView.reloadData()
+            self.showToast(message: "No Internet connectivity..")
         }
         
         viewModel.didFetchCarouselDataSucess = { [weak self] in //got success from api
@@ -165,7 +169,7 @@ extension HomeViewController {
         if isInternetConnected() {
             viewModel.getCarouselData()
         } else {
-            self.showToast(message: "Please connect to internet..")
+            self.showToast(message: "No Internet connectivity..")
             refreshControl.endRefreshing()
         }
     }
