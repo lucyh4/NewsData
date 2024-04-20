@@ -30,7 +30,9 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func didTapOnBottomBtn(_ sender: Any) {
-        
+        if let url = URL(string: "https://github.com/lucyh4/NewsData") {
+            UIApplication.shared.open(url)
+        }
     }
 
 }
