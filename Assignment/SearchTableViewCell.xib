@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SearchTableViewCell" rowHeight="57" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="474" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="474" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdi-G4-9JX">
+                        <rect key="frame" x="0.0" y="0.0" width="474" height="57"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8m-dg-mXN">
+                                <rect key="frame" x="10" y="10" width="454" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R8m-dg-mXN" firstAttribute="top" secondItem="jdi-G4-9JX" secondAttribute="top" constant="10" id="Gw6-1g-c8C"/>
+                            <constraint firstAttribute="trailing" secondItem="R8m-dg-mXN" secondAttribute="trailing" constant="10" id="JpW-56-9fB"/>
+                            <constraint firstItem="R8m-dg-mXN" firstAttribute="leading" secondItem="jdi-G4-9JX" secondAttribute="leading" constant="10" id="WjL-12-62u"/>
+                            <constraint firstAttribute="bottom" secondItem="R8m-dg-mXN" secondAttribute="bottom" constant="10" id="hFq-gT-pcl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jdi-G4-9JX" secondAttribute="bottom" id="0dz-lq-Vt4"/>
+                    <constraint firstItem="jdi-G4-9JX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BWf-Wl-brY"/>
+                    <constraint firstItem="jdi-G4-9JX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CWG-WD-72g"/>
+                    <constraint firstAttribute="trailing" secondItem="jdi-G4-9JX" secondAttribute="trailing" id="agt-9g-Vwl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="searchTF" destination="R8m-dg-mXN" id="m42-dn-xUw"/>
+            </connections>
+            <point key="canvasLocation" x="233.58778625954199" y="24.295774647887324"/>
+        </tableViewCell>
+    </objects>
+</document>
